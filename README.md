@@ -1,6 +1,9 @@
 circuit
 =======
 
+[![GoDoc](https://godoc.org/github.com/djo/circuit?status.svg)](http://godoc.org/github.com/djo/circuit)
+[![Build Status](https://travis-ci.org/djo/circuit.svg?branch=master)](https://travis-ci.org/djo/circuit)
+
 Implementation of [the circuit breaker](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker) pattern in Go.
 
 The circuit breaker can prevent an application from repeatedly trying to execute an operation that's likely to fail.

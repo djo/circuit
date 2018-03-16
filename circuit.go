@@ -20,6 +20,8 @@ const (
 // use it to distinguish from request's errors.
 var ErrBreakerOpen = errors.New("circuit: breaker open")
 
+// Breaker is a state machine to prevent an application
+// from repeatedly trying to execute an operation that's likely to fail.
 type Breaker struct {
 	state int32 // current state
 	until int64 // until timestamp of the interval (in closed state) or cooldown (in open state) period
